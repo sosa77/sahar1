@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sahar1</title>
+     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+
+<%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" %>
+
+
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+<!-- Latest compiled and minified CSS -->
+
+
+<!-- Latest compiled and minified JavaScript -->
+<%= javascript_include_tag"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" %>
+
+  <%= csrf_meta_tags %>
+
+</head>
+
+<body>
+
+<h1 class="italic"> <center><B> FORAT TRAVEL </B> </center></h1>
+<br><br><br><br>
+  <div class="container">
+  <div class="jumbotron">
+
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+
+      <div class="container">
+         <%= image_tag("22.jpg",:width => 950, :height => 350 )  %>
+        <div class="carousel-caption">                
+                    
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="container">
+          <%= image_tag("op.jpg" , :width =>950, :height => 350) %>
+        <div class="carousel-caption">
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="container">
+          <%= image_tag ("y.jpg"), :width =>950, :height => 350 %>
+        <div class="carousel-caption">
+                      
+          
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="container">
+          <%= image_tag("l.jpg" , :width => 950, :height => 350) %>
+        <div class="carousel-caption">
+            
+        </div>
+        </div>
+        </div>
+        <div class="item">
+      <div class="container">
+          <%= image_tag("e.jpg" , :width => 950, :height => 350) %>
+        <div class="carousel-caption">
+            
+        </div>
+       </div>
+       </div>
+        <div class="item">
+      <div class="container">
+          <%= image_tag("g.jpg" , :width => 950, :height => 350) %>
+        <div class="carousel-caption">
+            
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div><!-- /.carousel -->
+    <h1> </h1>
+    
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+<%= yield %>
+
+</body>
+</html>
